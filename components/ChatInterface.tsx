@@ -79,7 +79,7 @@ export function ChatInterface() {
     setIsLoading(false);
   }
 
-  function useQuickPrompt(value: string) {
+  function handleQuickPrompt(value: string) {
     setPrompt(value);
     generate(value);
   }
@@ -166,7 +166,7 @@ export function ChatInterface() {
                   key={item}
                   type="button"
                   className="focus-ring rounded-md border px-3 py-2 text-left text-xs text-muted-foreground transition-colors hover:bg-muted"
-                  onClick={() => useQuickPrompt(item)}
+                  onClick={() => handleQuickPrompt(item)}
                 >
                   {item}
                 </button>
@@ -184,7 +184,7 @@ export function ChatInterface() {
               </div>
               <div className="space-y-3">
                 {history.length === 0 ? (
-                  <p className="text-sm text-muted-foreground">Історія з'явиться після першої генерації.</p>
+                  <p className="text-sm text-muted-foreground">Історія з&apos;явиться після першої генерації.</p>
                 ) : (
                   history.map((item) => (
                     <button

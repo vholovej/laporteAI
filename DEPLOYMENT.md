@@ -31,7 +31,15 @@ git push -u origin main
 
 ## 3. Environment Variables
 
-Для поточного MVP змінні не потрібні. Mock AI працює локально.
+Для поточного MVP секретні змінні не потрібні. Mock AI працює локально.
+
+У проєкті вже додано безпечну змінну:
+
+```text
+NEXT_TELEMETRY_DISABLED=1
+```
+
+Вона вимикає анонімну телеметрію Next.js у Vercel, GitHub Actions і локальному `.env`.
 
 Коли будете підключати реальний OpenAI API, додайте у Vercel:
 

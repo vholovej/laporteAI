@@ -27,6 +27,8 @@ http://localhost:3000
 
 Покрокова інструкція є у `DEPLOYMENT.md`.
 
+Анонімна телеметрія Next.js вимкнена через `NEXT_TELEMETRY_DISABLED=1`.
+
 ## Структура
 
 ```text
